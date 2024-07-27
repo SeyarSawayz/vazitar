@@ -27,7 +27,7 @@ const Footer = () => {
       </h1>
       <div className="flex items-center justify-center gap-4">
         <a
-          href="https://www.facebook.com/profile.php?id=100084100696879"
+          href="https://www.facebook.com/share/8zJSqTGPxfJF4nqZ/?mibextid=kFxxJD"
           target="_blank"
           className="w-8 h-8 hover:bg-blue-600 transition-all duration-300 flex items-center justify-center text-gray-600 hover:text-white"
         >

@@ -13,7 +13,7 @@ const Social = () => {
       >
         <div className="w-8 h-8 rounded-full bg-transparent border border-gray-300 flex items-center justify-center cursor-pointer hover:bg-blue-600 transition-all duration-300">
           <a
-            href="https://www.facebook.com/profile.php?id=100084100696879"
+            href="https://www.facebook.com/share/8zJSqTGPxfJF4nqZ/?mibextid=kFxxJD"
             target="_blank"
           >
             <FaFacebookF className="text-l text-white" />

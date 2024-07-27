@@ -18,9 +18,9 @@ const MobileNav = ({ handleClick, toggle, setToggle }) => {
           </div>
           <button onClick={handleClick} className="focus:outline-none">
             {toggle ? (
-              <IoMdClose className="text-white text-5xl" />
+              <IoMdClose className="text-white text-3xl" />
             ) : (
-              <RxHamburgerMenu className="text-white text-5xl" />
+              <RxHamburgerMenu className="text-white text-3xl" />
             )}
           </button>
         </div>
