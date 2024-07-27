@@ -33,3 +33,25 @@ export const arrowVariants = {
     },
   },
 };
+
+export const arrowVariantsDown = {
+  hidden: { y: -20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: {
+        repeat: Infinity, // This makes the animation loop
+        repeatType: "reverse", // This makes the animation go back and forth
+        duration: 0.8,
+        ease: "easeInOut",
+        delay: 2,
+      },
+      opacity: {
+        duration: 0.8,
+        ease: "easeInOut",
+        delay: 2,
+      },
+    },
+  },
+};

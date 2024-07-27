@@ -8,7 +8,7 @@ import PlayYoutube from "./PlayYoutube";
 import Subscribe from "./Subscribe";
 import AllVideos from "./videosThumnails/AllVideos";
 import { motion } from "framer-motion";
-import { arrowVariants } from "./Animation";
+import { arrowVariants, arrowVariantsDown } from "./Animation";
 import { HiArrowSmDown } from "react-icons/hi";
 const Home = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -58,9 +58,9 @@ const Home = () => {
         }}
       >
         <motion.div
-          className="absolute bottom-16 left-[47%] cursor-pointer "
+          className="absolute bottom-16 left-[47%] cursor-pointer  "
           onClick={handleScrollBottom}
-          variants={arrowVariants}
+          variants={arrowVariantsDown}
           initial="hidden"
           animate="visible"
         >
