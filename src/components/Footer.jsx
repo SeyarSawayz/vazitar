@@ -11,20 +11,11 @@ const Footer = () => {
           <span className="text-gray-700">Vazitar </span>| Simple | Effective |
           Educational S.E.E{" "}
         </h1>
-        <h1 className="text-s lg:text-l  text-center text-gray-500">
+        <h1 className="text-xs lg:text-s  text-center text-gray-500">
           © Copyright All right reserved
         </h1>
       </Link>
-      <h1 className="text-gray-500">
-        Powered by{" "}
-        <a
-          href="https://kayhantech.netlify.app/"
-          target="_blank"
-          className="underline"
-        >
-          KayhanTech
-        </a>
-      </h1>
+
       <div className="flex items-center justify-center gap-4">
         <a
           href="https://www.facebook.com/share/8zJSqTGPxfJF4nqZ/?mibextid=kFxxJD"
