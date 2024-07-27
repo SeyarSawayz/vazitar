@@ -8,6 +8,8 @@ import PlayYoutube from "./PlayYoutube";
 import Subscribe from "./Subscribe";
 import AllVideos from "./videosThumnails/AllVideos";
 import { motion } from "framer-motion";
+import { arrowVariants } from "./Animation";
+import { HiArrowSmDown } from "react-icons/hi";
 const Home = () => {
   const [showScroll, setShowScroll] = useState(false);
 
@@ -36,19 +38,8 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const arrowVariants = {
-    hidden: { y: 0 },
-    visible: {
-      y: -10,
-      transition: {
-        y: {
-          repeat: Infinity, // This makes the animation loop
-          repeatType: "reverse", // This makes the animation go back and forth
-          duration: 0.8,
-          ease: "easeInOut",
-        },
-      },
-    },
+  const handleScrollBottom = () => {
+    window.scrollTo({ top: 650, behavior: "smooth" });
   };
   useEffect(() => {
     window.addEventListener("scroll", scrollUp);
@@ -59,15 +50,24 @@ const Home = () => {
   return (
     <>
       <div
-        className="w-full min-h-screen "
+        className="w-full min-h-screen relative "
         style={{
           backgroundImage: `url(${reshadPic})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
+        <motion.div
+          className="absolute bottom-16 left-[47%] cursor-pointer "
+          onClick={handleScrollBottom}
+          variants={arrowVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <HiArrowSmDown className="text-5xl font-bold text-gray-100" />
+        </motion.div>
         {/* <Header /> */}
-        <div className="flex items-center justify-start min-h-screen">
+        <div className="flex items-center justify-start min-h-screen pt-10">
           <Social />
         </div>
         {showScroll && (

@@ -68,7 +68,7 @@ const AllVideos = ({ onVideoSelect }) => {
             initial="hidden"
             whileInView="visible"
             variants={slideUp(video.delay)}
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
           >
             <a
               href={video.link}

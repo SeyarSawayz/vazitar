@@ -18,3 +18,18 @@ export const slideUp = (delay) => ({
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { duration: 1, delay: delay } },
 });
+
+export const arrowVariants = {
+  hidden: { y: 0 },
+  visible: {
+    y: -10,
+    transition: {
+      y: {
+        repeat: Infinity, // This makes the animation loop
+        repeatType: "reverse", // This makes the animation go back and forth
+        duration: 0.8,
+        ease: "easeInOut",
+      },
+    },
+  },
+};
